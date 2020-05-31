@@ -1,5 +1,5 @@
 # sqlalchemy-challenge
-Before treating myself to a trip to Hawaii, I do the necessary research on the climate!  
+Before treating myself to a trip to Hawaii, I need to do the necessary research on the climate!  
 Using SQLAlchemy ORM Queries, Pandas, and Matplotlib, I did some basic climate analysis and data exploration on the SQLite file, connecting to it using the "create_engine" command. Tables were reflected into classes using "automap_base()". A query was designed to retrieve precipitation data; this was loaded into a DF, plotted, and summarized statistically. Three more queries were used to find the total number of stations, the most active stations, and get the last 12 months of temperature observation data (TOBS).  
 Next, I created a Flask API based on my queries. The routes are as follows: a home page; a JSON (JavaScript Object Notation) representation of the queries (transformed into a dictionary w/ key-value pairs); a JSON list of stations; a JSON list of TOBS; and a JSON list of min., max. and avg. temperature from the start date to the end date.
 ```
