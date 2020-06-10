@@ -20,7 +20,7 @@ app = Flask(__name__)
 # Define what to do when a user hits the index route
 @app.route("/")
 def welcome():
-    """List all available api routes."""
+    # List all available api routes.
     return (
         f"Available Routes:<br/>"
         f"/api/v1.0/precipitation<br/>"
