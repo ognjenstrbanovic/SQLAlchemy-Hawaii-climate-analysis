@@ -94,8 +94,10 @@ def start_behavior(start_1):
 @app.route("/api/v1.0/start/<start>/end/<end>")
 # Define what to do when a user hits the start/end route
 def start_end(start, end):
+    # Correct for potentially incorrect user input
     user_input_2 = start.replace("/", "-")
     user_input_3 = end.replace("/", "-")
+    # Create our session (link) from Python to the DB
     session_6 = Session(engine)
     all_dates_2 = session_6.query(Measurement.date).all()
     session_6.close()
