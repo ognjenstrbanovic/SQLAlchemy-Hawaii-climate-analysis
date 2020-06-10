@@ -1,3 +1,5 @@
+# NOTE: This app is best viewed w/ a Chrome extension such as JSON Formatter
+
 # import Flask and other dependencies
 import numpy as np
 import sqlalchemy
