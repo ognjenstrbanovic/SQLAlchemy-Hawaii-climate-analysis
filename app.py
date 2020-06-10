@@ -38,7 +38,7 @@ def precipitation():
     session_1 = Session(engine)
     results_1 = session_1.query(Measurement.date, Measurement.prcp).filter(Measurement.date >= "2016-08-23").order_by(Measurement.date).all()
     session_1.close()
-    # Create a dictionary (or JSON object) from the row data and append to a list
+    # Create a Python dictionary (or JSON object) from the row data and append to a list
     query_1_converted_to_dict = []
     for date, prcp in results_1:
         precipitation_dictionary = {}
@@ -112,6 +112,7 @@ def start_end(start, end):
         return jsonify({"Error": "Date(s) not found."}), 404
     else:
         return jsonify(start_end_dictionary)
+
 # Define main behavior
 if __name__ == "__main__":
     app.run(debug=True)
