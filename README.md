@@ -1,4 +1,4 @@
-# sqlalchemy-Hawaii-climate-analysis 🧪
+# Hawaii Climate Analysis w/ SQLAlchemy 🧪
 Before treating myself to a trip to Hawaii, I need to do the necessary research on the climate!  
 
 ![Surfing in Hawaii](https://github.com/RutgersCodingBootcamp/RU-JER-DATA-PT-01-2020/blob/master/02-Homework/10-Advanced-Data-Storage-and-Retrieval/Instructions/Images/surfs-up.png?raw=true)  
